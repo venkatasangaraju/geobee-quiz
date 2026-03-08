@@ -6,8 +6,6 @@
       "http://www.physicalgeography.net/glossary.html",
       "http://geography.about.com/od/physicalgeography/",
       "http://www.enchantedlearning.com/geology/"
-    ],
-    "localFallbackTextFile": "scripts/fallback/week1-physical-geography.txt",
-    "maxQuestions": 16
+    ]
   }
 }

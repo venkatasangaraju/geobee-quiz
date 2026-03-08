@@ -21,12 +21,6 @@ test("sentenceToFact parses simple definition", () => {
   });
 });
 
-
-
-test("sentenceToFact removes leading articles from subject", () => {
-  const fact = sentenceToFact("The crust is the outermost solid layer of Earth");
-  assert.equal(fact.subject, "crust");
-});
 test("buildMcqsFromFacts converts facts to MCQs", () => {
   const facts = [
     "Hydrosphere is all the water on Earth",

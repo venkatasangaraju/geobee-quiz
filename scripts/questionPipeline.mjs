@@ -24,10 +24,7 @@ export function sentenceToFact(sentence) {
   const match = sentence.match(/^(.{3,80}?)\s+is\s+(an?\s+|the\s+)?(.{3,120})$/i);
   if (!match) return null;
 
-  const subject = match[1]
-    .replace(/^\W+|\W+$/g, "")
-    .replace(/^(the|a|an)\s+/i, "")
-    .trim();
+  const subject = match[1].replace(/^\W+|\W+$/g, "").trim();
   const predicate = match[3].replace(/^\W+|\W+$/g, "").trim();
 
   if (!WORD_RE.test(subject) || !WORD_RE.test(predicate)) return null;
@@ -53,9 +50,7 @@ export function buildMcqsFromFacts(facts, { topicId, topicName, sourceUrl, maxQu
 
     if (distractors.length < 3) continue;
 
-    const baseOptions = unique([fact.predicate, ...distractors]).slice(0, 4);
-    const rotation = idx % baseOptions.length;
-    const options = [...baseOptions.slice(rotation), ...baseOptions.slice(0, rotation)];
+    const options = unique([fact.predicate, ...distractors]).slice(0, 4);
     const answerIndex = options.indexOf(fact.predicate);
 
     questions.push({
