@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
-export default function Quiz({ title, questions, onBack }) {
+export default function Quiz({ title, questions }) {
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
   const [revealed, setRevealed] = useState(false);
 
+  useEffect(() => {
+    setIndex(0);
+    setSelected(null);
+    setRevealed(false);
+  }, [title, questions]);
+
   const current = questions[index];
+
+  const isCorrect = useMemo(() => {
+    if (!revealed || selected === null || !current) return false;
+    return selected === current.answerIndex;
+  }, [current, revealed, selected]);
 
   if (!current) {
     return (
-      <div className="card">
-        <h2>{title}</h2>
-        <p>No questions added yet.</p>
-        <button onClick={onBack}>Back</button>
-      </div>
+      <section className="panel card">
+        <h2 className="h2">{title}</h2>
+        <p className="muted">No questions available for this topic yet.</p>
+      </section>
     );
   }
 
@@ -23,44 +33,58 @@ export default function Quiz({ title, questions, onBack }) {
     setRevealed(true);
   };
 
-  return (
-    <div className="card">
-      <h2>{title}</h2>
-      <p><b>Question {index + 1}:</b> {current.question}</p>
+  const onNext = () => {
+    setIndex((value) => (value < questions.length - 1 ? value + 1 : 0));
+    setSelected(null);
+    setRevealed(false);
+  };
 
-      {current.options.map((opt, i) => (
-        <button
-          key={i}
-          onClick={() => choose(i)}
-          style={{
-            display: "block",
-            margin: "8px 0",
-            background:
-              revealed && i === current.answerIndex
-                ? "green"
-                : revealed && i === selected
-                ? "red"
-                : ""
-          }}
-        >
-          {opt}
-        </button>
-      ))}
+  return (
+    <section className="panel card" role="tabpanel" aria-label={title}>
+      <div className="quiz-meta">
+        <h2 className="h2">{title}</h2>
+        <span className="pill">Question {index + 1} / {questions.length}</span>
+      </div>
+
+      <p className="question">{current.question}</p>
+
+      <div className="options">
+        {current.options.map((opt, i) => {
+          const classes = ["option"];
+          if (revealed && i === current.answerIndex) classes.push("option--correct");
+          if (revealed && i === selected && i !== current.answerIndex) classes.push("option--incorrect");
+
+          return (
+            <button
+              key={opt}
+              onClick={() => choose(i)}
+              className={classes.join(" ")}
+              disabled={revealed}
+              type="button"
+            >
+              {opt}
+            </button>
+          );
+        })}
+      </div>
 
       {revealed && (
-        <div>
-          <p><b>Correct Answer:</b> {current.options[current.answerIndex]}</p>
-          <p>{current.explanation}</p>
-          <button onClick={() => {
-            setIndex(index + 1);
-            setSelected(null);
-            setRevealed(false);
-          }}>Next</button>
+        <div className={`feedback ${isCorrect ? "feedback--good" : "feedback--bad"}`}>
+          {isCorrect ? (
+            <p><strong>Correct!</strong> {current.explanation}</p>
+          ) : (
+            <p>
+              <strong>Not quite.</strong> Correct answer: {current.options[current.answerIndex]}. {current.explanation}
+            </p>
+          )}
         </div>
       )}
 
-      <br />
-      <button onClick={onBack}>Back to Topics</button>
-    </div>
+      <div className="actions">
+        <button className="button button--secondary" type="button" onClick={onNext}>
+          {index < questions.length - 1 ? "Next Question" : "Restart Topic"}
+        </button>
+      </div>
+    </section>
   );
 }
