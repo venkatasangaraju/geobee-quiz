@@ -1,0 +1,237 @@
+{
+  "week1": [
+    {
+      "id": "week1-auto-1",
+      "topic": "Physical Geography",
+      "question": "What is crust?",
+      "options": [
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "rigid outer shell made of the crust and upper mantle"
+      ],
+      "answerIndex": 0,
+      "explanation": "crust is outermost solid layer of Earth.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-2",
+      "topic": "Physical Geography",
+      "question": "What is mantle?",
+      "options": [
+        "outermost solid layer of Earth",
+        "innermost part of Earth made mostly of iron and nickel",
+        "rigid outer shell made of the crust and upper mantle",
+        "thick layer of hot rock beneath Earth's crust"
+      ],
+      "answerIndex": 3,
+      "explanation": "mantle is thick layer of hot rock beneath Earth's crust.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-3",
+      "topic": "Physical Geography",
+      "question": "What is core?",
+      "options": [
+        "thick layer of hot rock beneath Earth's crust",
+        "rigid outer shell made of the crust and upper mantle",
+        "innermost part of Earth made mostly of iron and nickel",
+        "outermost solid layer of Earth"
+      ],
+      "answerIndex": 2,
+      "explanation": "core is innermost part of Earth made mostly of iron and nickel.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-4",
+      "topic": "Physical Geography",
+      "question": "What is lithosphere?",
+      "options": [
+        "innermost part of Earth made mostly of iron and nickel",
+        "rigid outer shell made of the crust and upper mantle",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust"
+      ],
+      "answerIndex": 1,
+      "explanation": "lithosphere is rigid outer shell made of the crust and upper mantle.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-5",
+      "topic": "Physical Geography",
+      "question": "What is asthenosphere?",
+      "options": [
+        "semi-fluid layer of the upper mantle beneath the lithosphere",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel"
+      ],
+      "answerIndex": 0,
+      "explanation": "asthenosphere is semi-fluid layer of the upper mantle beneath the lithosphere.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-6",
+      "topic": "Physical Geography",
+      "question": "What is hydrosphere?",
+      "options": [
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "all water on Earth, including oceans, rivers, and groundwater"
+      ],
+      "answerIndex": 3,
+      "explanation": "hydrosphere is all water on Earth, including oceans, rivers, and groundwater.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-7",
+      "topic": "Physical Geography",
+      "question": "What is atmosphere?",
+      "options": [
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "envelope of gases surrounding Earth",
+        "outermost solid layer of Earth"
+      ],
+      "answerIndex": 2,
+      "explanation": "atmosphere is envelope of gases surrounding Earth.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-8",
+      "topic": "Physical Geography",
+      "question": "What is Weather?",
+      "options": [
+        "innermost part of Earth made mostly of iron and nickel",
+        "short-term condition of the atmosphere at a place and time",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust"
+      ],
+      "answerIndex": 1,
+      "explanation": "Weather is short-term condition of the atmosphere at a place and time.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-9",
+      "topic": "Physical Geography",
+      "question": "What is Climate?",
+      "options": [
+        "long-term average pattern of weather in a region",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel"
+      ],
+      "answerIndex": 0,
+      "explanation": "Climate is long-term average pattern of weather in a region.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-10",
+      "topic": "Physical Geography",
+      "question": "What is Erosion?",
+      "options": [
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "process that transports weathered rock and soil"
+      ],
+      "answerIndex": 3,
+      "explanation": "Erosion is process that transports weathered rock and soil.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-11",
+      "topic": "Physical Geography",
+      "question": "What is Weathering?",
+      "options": [
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "breakdown of rocks at or near Earth's surface",
+        "outermost solid layer of Earth"
+      ],
+      "answerIndex": 2,
+      "explanation": "Weathering is breakdown of rocks at or near Earth's surface.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-12",
+      "topic": "Physical Geography",
+      "question": "What is watershed?",
+      "options": [
+        "innermost part of Earth made mostly of iron and nickel",
+        "area of land where all water drains to a common outlet",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust"
+      ],
+      "answerIndex": 1,
+      "explanation": "watershed is area of land where all water drains to a common outlet.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-13",
+      "topic": "Physical Geography",
+      "question": "What is delta?",
+      "options": [
+        "landform created by deposition of sediment at a river mouth",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel"
+      ],
+      "answerIndex": 0,
+      "explanation": "delta is landform created by deposition of sediment at a river mouth.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-14",
+      "topic": "Physical Geography",
+      "question": "What is glacier?",
+      "options": [
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "large, slow-moving mass of ice formed from compacted snow"
+      ],
+      "answerIndex": 3,
+      "explanation": "glacier is large, slow-moving mass of ice formed from compacted snow.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-15",
+      "topic": "Physical Geography",
+      "question": "What is plateau?",
+      "options": [
+        "thick layer of hot rock beneath Earth's crust",
+        "innermost part of Earth made mostly of iron and nickel",
+        "elevated flat area of land",
+        "outermost solid layer of Earth"
+      ],
+      "answerIndex": 2,
+      "explanation": "plateau is elevated flat area of land.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    },
+    {
+      "id": "week1-auto-16",
+      "topic": "Physical Geography",
+      "question": "What is earthquake?",
+      "options": [
+        "innermost part of Earth made mostly of iron and nickel",
+        "sudden shaking of the ground caused by movement along faults",
+        "outermost solid layer of Earth",
+        "thick layer of hot rock beneath Earth's crust"
+      ],
+      "answerIndex": 1,
+      "explanation": "earthquake is sudden shaking of the ground caused by movement along faults.",
+      "sourceUrl": "local:scripts/fallback/week1-physical-geography.txt"
+    }
+  ],
+  "week2": [],
+  "week3": [],
+  "week4": [],
+  "week5": [],
+  "week6": [],
+  "week7": [],
+  "week8": [],
+  "week9": [],
+  "misc": []
+}

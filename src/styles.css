@@ -1,17 +1,155 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  margin: 0;
+  background: radial-gradient(circle at top right, #dbeafe, transparent 45%), #f8fafc;
 }
 
 .page {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+}
+
+.h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.muted {
+  color: #475569;
 }
 
 .card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.tab {
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #fff;
+  color: #334155;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.tab--active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.panel {
+  padding: 24px;
+}
+
+.quiz-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.pill {
+  font-size: 0.85rem;
+  color: #1d4ed8;
+  background: #dbeafe;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.question {
+  font-size: 1.1rem;
+  margin: 18px 0;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.option {
+  text-align: left;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.option:hover {
+  border-color: #60a5fa;
+}
+
+.option--correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.option--incorrect {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+.feedback {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.feedback--good {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.feedback--bad {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.actions {
+  margin-top: 16px;
+}
+
+.button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.button--secondary {
+  background: #eff6ff;
+  color: #1e40af;
+  border-color: #bfdbfe;
 }
